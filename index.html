@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_21d092199082d8e2ca5fad04e498a88a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_21d092199082d8e2ca5fad04e498a88a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_21d092199082d8e2ca5fad04e498a88a = L.map(
+                "map_21d092199082d8e2ca5fad04e498a88a",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 1,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_665bb009df364a3fc5894ca5438c260e = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_665bb009df364a3fc5894ca5438c260e.addTo(map_21d092199082d8e2ca5fad04e498a88a);
+        
+    
+            var marker_f4daae87391b853dd2e0d0f9ec7675c5 = L.marker(
+                [54.455, -1.555],
+                {
+}
+            ).addTo(map_21d092199082d8e2ca5fad04e498a88a);
+        
+    
+            var icon_7345d34351077117607deea4f9714552 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "play",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_821648278b6c54b4f5248bcffb8d8bb4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c7099e0c8399d405ab2c26816f77551a = $(`<div id="html_c7099e0c8399d405ab2c26816f77551a" style="width: 100.0%; height: 100.0%;"><b>Stop 1</b><br>1846<br>Croft-on-Tees, North Yorkshire</div>`)[0];
+                popup_821648278b6c54b4f5248bcffb8d8bb4.setContent(html_c7099e0c8399d405ab2c26816f77551a);
+            
+        
+
+        marker_f4daae87391b853dd2e0d0f9ec7675c5.bindPopup(popup_821648278b6c54b4f5248bcffb8d8bb4)
+        ;
+
+        
+    
+    
+                marker_f4daae87391b853dd2e0d0f9ec7675c5.setIcon(icon_7345d34351077117607deea4f9714552);
+            
+    
+            var marker_f9166c20ef25c0b4f75c63814cd5a5d8 = L.marker(
+                [54.695, -1.515],
+                {
+}
+            ).addTo(map_21d092199082d8e2ca5fad04e498a88a);
+        
+    
+            var icon_e4cdb16f8b90c27bb56bdef1562fd29a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_926de361d72d6133c5ca047aaba96b08 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_17722fadc620faf370f38e1a228d154f = $(`<div id="html_17722fadc620faf370f38e1a228d154f" style="width: 100.0%; height: 100.0%;"><b>Stop 2</b><br>1851<br>Mainsforth, County Durham</div>`)[0];
+                popup_926de361d72d6133c5ca047aaba96b08.setContent(html_17722fadc620faf370f38e1a228d154f);
+            
+        
+
+        marker_f9166c20ef25c0b4f75c63814cd5a5d8.bindPopup(popup_926de361d72d6133c5ca047aaba96b08)
+        ;
+
+        
+    
+    
+                marker_f9166c20ef25c0b4f75c63814cd5a5d8.setIcon(icon_e4cdb16f8b90c27bb56bdef1562fd29a);
+            
+    
+            var marker_a88aaf569bb9266ff68782022fc0a69a = L.marker(
+                [54.663, -1.448],
+                {
+}
+            ).addTo(map_21d092199082d8e2ca5fad04e498a88a);
+        
+    
+            var icon_68b50739b57bbd6a04d11661accee696 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8f5286460572494a132dc582f555dccb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f6f8b35c19fd559ca1948e95121a98bc = $(`<div id="html_f6f8b35c19fd559ca1948e95121a98bc" style="width: 100.0%; height: 100.0%;"><b>Stop 3</b><br>1861<br>Bradbury, County Durham</div>`)[0];
+                popup_8f5286460572494a132dc582f555dccb.setContent(html_f6f8b35c19fd559ca1948e95121a98bc);
+            
+        
+
+        marker_a88aaf569bb9266ff68782022fc0a69a.bindPopup(popup_8f5286460572494a132dc582f555dccb)
+        ;
+
+        
+    
+    
+                marker_a88aaf569bb9266ff68782022fc0a69a.setIcon(icon_68b50739b57bbd6a04d11661accee696);
+            
+    
+            var marker_8692bc51362b6761ac73359d93079446 = L.marker(
+                [55.145, -2.256],
+                {
+}
+            ).addTo(map_21d092199082d8e2ca5fad04e498a88a);
+        
+    
+            var icon_5a4fa74d8aa2ba33d1f8bf1817ace743 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0bb834dfa8d256d9f151256b7dbf355b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_65e2bce9cf66fd04083905a6b91cc197 = $(`<div id="html_65e2bce9cf66fd04083905a6b91cc197" style="width: 100.0%; height: 100.0%;"><b>Stop 4</b><br>1871<br>Bellingham, Northumberland</div>`)[0];
+                popup_0bb834dfa8d256d9f151256b7dbf355b.setContent(html_65e2bce9cf66fd04083905a6b91cc197);
+            
+        
+
+        marker_8692bc51362b6761ac73359d93079446.bindPopup(popup_0bb834dfa8d256d9f151256b7dbf355b)
+        ;
+
+        
+    
+    
+                marker_8692bc51362b6761ac73359d93079446.setIcon(icon_5a4fa74d8aa2ba33d1f8bf1817ace743);
+            
+    
+            var marker_85d6546152fd0794baaa356335c1ec63 = L.marker(
+                [54.523, -1.553],
+                {
+}
+            ).addTo(map_21d092199082d8e2ca5fad04e498a88a);
+        
+    
+            var icon_8fed7b9ecad54423d7d65cccc061e016 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_21cabd621ddf7095432d48506e432eca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d4721480f9f5b7be5de75f3e857ce0ae = $(`<div id="html_d4721480f9f5b7be5de75f3e857ce0ae" style="width: 100.0%; height: 100.0%;"><b>Stop 5</b><br>1881<br>Darlington, Country Durham</div>`)[0];
+                popup_21cabd621ddf7095432d48506e432eca.setContent(html_d4721480f9f5b7be5de75f3e857ce0ae);
+            
+        
+
+        marker_85d6546152fd0794baaa356335c1ec63.bindPopup(popup_21cabd621ddf7095432d48506e432eca)
+        ;
+
+        
+    
+    
+                marker_85d6546152fd0794baaa356335c1ec63.setIcon(icon_8fed7b9ecad54423d7d65cccc061e016);
+            
+    
+            var marker_98907343241db9486e2ac93f722e4bda = L.marker(
+                [40.713, -74.006],
+                {
+}
+            ).addTo(map_21d092199082d8e2ca5fad04e498a88a);
+        
+    
+            var icon_26f85c585bbbd92b454681109d31d06d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3e51465ffa37aba49d283e2724d4731f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fc89e47a59af27f826b83eadd8f03fc3 = $(`<div id="html_fc89e47a59af27f826b83eadd8f03fc3" style="width: 100.0%; height: 100.0%;"><b>Stop 6</b><br>1883<br>New York</div>`)[0];
+                popup_3e51465ffa37aba49d283e2724d4731f.setContent(html_fc89e47a59af27f826b83eadd8f03fc3);
+            
+        
+
+        marker_98907343241db9486e2ac93f722e4bda.bindPopup(popup_3e51465ffa37aba49d283e2724d4731f)
+        ;
+
+        
+    
+    
+                marker_98907343241db9486e2ac93f722e4bda.setIcon(icon_26f85c585bbbd92b454681109d31d06d);
+            
+    
+            var marker_921c214a87825ae52f058f4881bc2ca2 = L.marker(
+                [45.421, -75.697],
+                {
+}
+            ).addTo(map_21d092199082d8e2ca5fad04e498a88a);
+        
+    
+            var icon_ce6298c843190893c8765fa68a391864 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_24160cfe8a8cccd31343ed008ff20855 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7059224f2661248e4d099b36e7b4fb00 = $(`<div id="html_7059224f2661248e4d099b36e7b4fb00" style="width: 100.0%; height: 100.0%;"><b>Stop 7</b><br>1892<br>Ottawa</div>`)[0];
+                popup_24160cfe8a8cccd31343ed008ff20855.setContent(html_7059224f2661248e4d099b36e7b4fb00);
+            
+        
+
+        marker_921c214a87825ae52f058f4881bc2ca2.bindPopup(popup_24160cfe8a8cccd31343ed008ff20855)
+        ;
+
+        
+    
+    
+                marker_921c214a87825ae52f058f4881bc2ca2.setIcon(icon_ce6298c843190893c8765fa68a391864);
+            
+    
+            var marker_532b0b4bbcc7f2b17ec0e086080aee10 = L.marker(
+                [50.716, -3.533],
+                {
+}
+            ).addTo(map_21d092199082d8e2ca5fad04e498a88a);
+        
+    
+            var icon_0abad42aab228cf30c78d4aaac18ce28 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_88c5b5ff7065f6ed6066ba5650e65b7b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_68e792c8b290c3fac71feffee8d71ac4 = $(`<div id="html_68e792c8b290c3fac71feffee8d71ac4" style="width: 100.0%; height: 100.0%;"><b>Stop 8</b><br>1901<br>Devon</div>`)[0];
+                popup_88c5b5ff7065f6ed6066ba5650e65b7b.setContent(html_68e792c8b290c3fac71feffee8d71ac4);
+            
+        
+
+        marker_532b0b4bbcc7f2b17ec0e086080aee10.bindPopup(popup_88c5b5ff7065f6ed6066ba5650e65b7b)
+        ;
+
+        
+    
+    
+                marker_532b0b4bbcc7f2b17ec0e086080aee10.setIcon(icon_0abad42aab228cf30c78d4aaac18ce28);
+            
+    
+            var marker_42d75ea97882986069f511bf47cf50cc = L.marker(
+                [50.266, -5.052],
+                {
+}
+            ).addTo(map_21d092199082d8e2ca5fad04e498a88a);
+        
+    
+            var icon_bf03c00de26f787f7b28331c4a6f90db = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2e60703c4339464858a73b202a1e849c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_320a1ee6193fb7e40f07bc702d377596 = $(`<div id="html_320a1ee6193fb7e40f07bc702d377596" style="width: 100.0%; height: 100.0%;"><b>Stop 9</b><br>1901<br>Cornwall</div>`)[0];
+                popup_2e60703c4339464858a73b202a1e849c.setContent(html_320a1ee6193fb7e40f07bc702d377596);
+            
+        
+
+        marker_42d75ea97882986069f511bf47cf50cc.bindPopup(popup_2e60703c4339464858a73b202a1e849c)
+        ;
+
+        
+    
+    
+                marker_42d75ea97882986069f511bf47cf50cc.setIcon(icon_bf03c00de26f787f7b28331c4a6f90db);
+            
+    
+            var marker_994de90490bdfc6d4b273ce784000cb7 = L.marker(
+                [52.13, -3.783],
+                {
+}
+            ).addTo(map_21d092199082d8e2ca5fad04e498a88a);
+        
+    
+            var icon_d8ad5e62ae1ea198c1e233699bc7095d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cd0a7755f9e88a356256edb52e6e1e84 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8ed3675a5545de2a83e5df1821e1d4ff = $(`<div id="html_8ed3675a5545de2a83e5df1821e1d4ff" style="width: 100.0%; height: 100.0%;"><b>Stop 10</b><br>1901<br>Wales</div>`)[0];
+                popup_cd0a7755f9e88a356256edb52e6e1e84.setContent(html_8ed3675a5545de2a83e5df1821e1d4ff);
+            
+        
+
+        marker_994de90490bdfc6d4b273ce784000cb7.bindPopup(popup_cd0a7755f9e88a356256edb52e6e1e84)
+        ;
+
+        
+    
+    
+                marker_994de90490bdfc6d4b273ce784000cb7.setIcon(icon_d8ad5e62ae1ea198c1e233699bc7095d);
+            
+    
+            var marker_509fb0597eebc3c011056ec5b02c493e = L.marker(
+                [50.503, 4.469],
+                {
+}
+            ).addTo(map_21d092199082d8e2ca5fad04e498a88a);
+        
+    
+            var icon_1cd0f518a13135703e8c9e58a0b77fe4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_555f53c2f6505fdb445360bc5667f72b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_31e3072beb8c9f7fefc117c0d80bc68a = $(`<div id="html_31e3072beb8c9f7fefc117c0d80bc68a" style="width: 100.0%; height: 100.0%;"><b>Stop 11</b><br>1901<br>Belgium</div>`)[0];
+                popup_555f53c2f6505fdb445360bc5667f72b.setContent(html_31e3072beb8c9f7fefc117c0d80bc68a);
+            
+        
+
+        marker_509fb0597eebc3c011056ec5b02c493e.bindPopup(popup_555f53c2f6505fdb445360bc5667f72b)
+        ;
+
+        
+    
+    
+                marker_509fb0597eebc3c011056ec5b02c493e.setIcon(icon_1cd0f518a13135703e8c9e58a0b77fe4);
+            
+    
+            var marker_b4e0a3a332e3df25a93ff5df1df0f06e = L.marker(
+                [52.133, 5.291],
+                {
+}
+            ).addTo(map_21d092199082d8e2ca5fad04e498a88a);
+        
+    
+            var icon_22a2e94018401ad0af4507cf21c5f462 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ad1ae8bcb6e3ce269d71e7ed080c879f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bbc5ca1c519a4f985bb4b1672b5e2b5e = $(`<div id="html_bbc5ca1c519a4f985bb4b1672b5e2b5e" style="width: 100.0%; height: 100.0%;"><b>Stop 12</b><br>1902<br>The Netherlands</div>`)[0];
+                popup_ad1ae8bcb6e3ce269d71e7ed080c879f.setContent(html_bbc5ca1c519a4f985bb4b1672b5e2b5e);
+            
+        
+
+        marker_b4e0a3a332e3df25a93ff5df1df0f06e.bindPopup(popup_ad1ae8bcb6e3ce269d71e7ed080c879f)
+        ;
+
+        
+    
+    
+                marker_b4e0a3a332e3df25a93ff5df1df0f06e.setIcon(icon_22a2e94018401ad0af4507cf21c5f462);
+            
+    
+            var marker_ddb0fe878e8dd634b98e33724bff2088 = L.marker(
+                [49.182, 0.371],
+                {
+}
+            ).addTo(map_21d092199082d8e2ca5fad04e498a88a);
+        
+    
+            var icon_d44b0768eeacba69c7133e31de2af4ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9cbc165ff00fe7e93d0121b34cdc8d1c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b6348e636ef5363096c3d9fef4f83f23 = $(`<div id="html_b6348e636ef5363096c3d9fef4f83f23" style="width: 100.0%; height: 100.0%;"><b>Stop 13</b><br>1902<br>Normandy, France</div>`)[0];
+                popup_9cbc165ff00fe7e93d0121b34cdc8d1c.setContent(html_b6348e636ef5363096c3d9fef4f83f23);
+            
+        
+
+        marker_ddb0fe878e8dd634b98e33724bff2088.bindPopup(popup_9cbc165ff00fe7e93d0121b34cdc8d1c)
+        ;
+
+        
+    
+    
+                marker_ddb0fe878e8dd634b98e33724bff2088.setIcon(icon_d44b0768eeacba69c7133e31de2af4ef);
+            
+    
+            var marker_d51eca6d4d7211bf931451a15404cee6 = L.marker(
+                [45.421, -75.697],
+                {
+}
+            ).addTo(map_21d092199082d8e2ca5fad04e498a88a);
+        
+    
+            var icon_9a292decedf3df831862c18427b4303a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0e4219914a84c78e63db689d16565b15 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d682bbbf7c2fcda63571346f7b48e3c6 = $(`<div id="html_d682bbbf7c2fcda63571346f7b48e3c6" style="width: 100.0%; height: 100.0%;"><b>Stop 14</b><br>1903<br>Ottawa</div>`)[0];
+                popup_0e4219914a84c78e63db689d16565b15.setContent(html_d682bbbf7c2fcda63571346f7b48e3c6);
+            
+        
+
+        marker_d51eca6d4d7211bf931451a15404cee6.bindPopup(popup_0e4219914a84c78e63db689d16565b15)
+        ;
+
+        
+    
+    
+                marker_d51eca6d4d7211bf931451a15404cee6.setIcon(icon_9a292decedf3df831862c18427b4303a);
+            
+    
+            var marker_1265ac983c668dde848dfdeb55230264 = L.marker(
+                [31.768, 35.214],
+                {
+}
+            ).addTo(map_21d092199082d8e2ca5fad04e498a88a);
+        
+    
+            var icon_8f2277261ee600ceae34ca020bde4cd9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c659283e9776e0eafc400eaa83df700f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eab187577534e21e6e364e6a6c664fbf = $(`<div id="html_eab187577534e21e6e364e6a6c664fbf" style="width: 100.0%; height: 100.0%;"><b>Stop 15</b><br>1904<br>Holy Land</div>`)[0];
+                popup_c659283e9776e0eafc400eaa83df700f.setContent(html_eab187577534e21e6e364e6a6c664fbf);
+            
+        
+
+        marker_1265ac983c668dde848dfdeb55230264.bindPopup(popup_c659283e9776e0eafc400eaa83df700f)
+        ;
+
+        
+    
+    
+                marker_1265ac983c668dde848dfdeb55230264.setIcon(icon_8f2277261ee600ceae34ca020bde4cd9);
+            
+    
+            var marker_e0870197dfc261a266f511cde9de7836 = L.marker(
+                [30.044, 31.236],
+                {
+}
+            ).addTo(map_21d092199082d8e2ca5fad04e498a88a);
+        
+    
+            var icon_77b0a725bf83162d9eb519651c93f8a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_daaa02628bc2f55be101d4faa698cc77 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0879c68dd19b7561edaec96a91f110fd = $(`<div id="html_0879c68dd19b7561edaec96a91f110fd" style="width: 100.0%; height: 100.0%;"><b>Stop 16</b><br>1904<br>Egypt</div>`)[0];
+                popup_daaa02628bc2f55be101d4faa698cc77.setContent(html_0879c68dd19b7561edaec96a91f110fd);
+            
+        
+
+        marker_e0870197dfc261a266f511cde9de7836.bindPopup(popup_daaa02628bc2f55be101d4faa698cc77)
+        ;
+
+        
+    
+    
+                marker_e0870197dfc261a266f511cde9de7836.setIcon(icon_77b0a725bf83162d9eb519651c93f8a1);
+            
+    
+            var marker_10ec727c4fedf9a5d581341cb8c9ef24 = L.marker(
+                [-6.165, 39.202],
+                {
+}
+            ).addTo(map_21d092199082d8e2ca5fad04e498a88a);
+        
+    
+            var icon_a618bbb5c325f9287d5773156717c0d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_620ef5982f19cfa210a1795da70c4ae9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ddc419690f7e2c6ceeb9dd6c6b393f7c = $(`<div id="html_ddc419690f7e2c6ceeb9dd6c6b393f7c" style="width: 100.0%; height: 100.0%;"><b>Stop 17</b><br>1905<br>Zanzibar</div>`)[0];
+                popup_620ef5982f19cfa210a1795da70c4ae9.setContent(html_ddc419690f7e2c6ceeb9dd6c6b393f7c);
+            
+        
+
+        marker_10ec727c4fedf9a5d581341cb8c9ef24.bindPopup(popup_620ef5982f19cfa210a1795da70c4ae9)
+        ;
+
+        
+    
+    
+                marker_10ec727c4fedf9a5d581341cb8c9ef24.setIcon(icon_a618bbb5c325f9287d5773156717c0d4);
+            
+    
+            var marker_f2c799fa67d74385542b5d46727b8409 = L.marker(
+                [45.421, -75.697],
+                {
+}
+            ).addTo(map_21d092199082d8e2ca5fad04e498a88a);
+        
+    
+            var icon_7902ffd558b3c6b80c06578db8bc1584 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_54dcd9e19a9d01bd2d6df2e4975da581 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9dd935fdc841c3cc57534ecad27936c5 = $(`<div id="html_9dd935fdc841c3cc57534ecad27936c5" style="width: 100.0%; height: 100.0%;"><b>Stop 18</b><br>1906<br>Ottawa</div>`)[0];
+                popup_54dcd9e19a9d01bd2d6df2e4975da581.setContent(html_9dd935fdc841c3cc57534ecad27936c5);
+            
+        
+
+        marker_f2c799fa67d74385542b5d46727b8409.bindPopup(popup_54dcd9e19a9d01bd2d6df2e4975da581)
+        ;
+
+        
+    
+    
+                marker_f2c799fa67d74385542b5d46727b8409.setIcon(icon_7902ffd558b3c6b80c06578db8bc1584);
+            
+    
+            var marker_717e86979f2af2114e1f46395fd8ada9 = L.marker(
+                [40.713, -74.006],
+                {
+}
+            ).addTo(map_21d092199082d8e2ca5fad04e498a88a);
+        
+    
+            var icon_a7ca5d839c9d289edd069b5a494e761c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d230be2fbd528d49772e1c059971d639 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_81d246fb711ab8455fe159c6805bfd95 = $(`<div id="html_81d246fb711ab8455fe159c6805bfd95" style="width: 100.0%; height: 100.0%;"><b>Stop 19</b><br>1920-01-01 00:00:00<br>New York</div>`)[0];
+                popup_d230be2fbd528d49772e1c059971d639.setContent(html_81d246fb711ab8455fe159c6805bfd95);
+            
+        
+
+        marker_717e86979f2af2114e1f46395fd8ada9.bindPopup(popup_d230be2fbd528d49772e1c059971d639)
+        ;
+
+        
+    
+    
+                marker_717e86979f2af2114e1f46395fd8ada9.setIcon(icon_a7ca5d839c9d289edd069b5a494e761c);
+            
+    
+            var marker_218ea21a7229e3692773598df0c610b7 = L.marker(
+                [53.408, -2.992],
+                {
+}
+            ).addTo(map_21d092199082d8e2ca5fad04e498a88a);
+        
+    
+            var icon_e80dc051e9ba78051ecac1e585182717 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a4388565ec47f2af69e3d5c6ce02b7cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4e4647b6a016239a3f0ca6c1a3fddec3 = $(`<div id="html_4e4647b6a016239a3f0ca6c1a3fddec3" style="width: 100.0%; height: 100.0%;"><b>Stop 20</b><br>1920-08-01 00:00:00<br>Liverpool</div>`)[0];
+                popup_a4388565ec47f2af69e3d5c6ce02b7cf.setContent(html_4e4647b6a016239a3f0ca6c1a3fddec3);
+            
+        
+
+        marker_218ea21a7229e3692773598df0c610b7.bindPopup(popup_a4388565ec47f2af69e3d5c6ce02b7cf)
+        ;
+
+        
+    
+    
+                marker_218ea21a7229e3692773598df0c610b7.setIcon(icon_e80dc051e9ba78051ecac1e585182717);
+            
+    
+            var marker_880f8968a178258e354644e8dc2a9911 = L.marker(
+                [51.549, -0.099],
+                {
+}
+            ).addTo(map_21d092199082d8e2ca5fad04e498a88a);
+        
+    
+            var icon_cb800d310a4ea59b98fd73073355464f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8d9d69fe28f558f20d63ea0d27efb0a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_747c667bf89cad0017dd9d4458fecefd = $(`<div id="html_747c667bf89cad0017dd9d4458fecefd" style="width: 100.0%; height: 100.0%;"><b>Stop 21</b><br>1920-08-02 00:00:00<br>25 Highbury Crescent, Islington, London</div>`)[0];
+                popup_8d9d69fe28f558f20d63ea0d27efb0a5.setContent(html_747c667bf89cad0017dd9d4458fecefd);
+            
+        
+
+        marker_880f8968a178258e354644e8dc2a9911.bindPopup(popup_8d9d69fe28f558f20d63ea0d27efb0a5)
+        ;
+
+        
+    
+    
+                marker_880f8968a178258e354644e8dc2a9911.setIcon(icon_cb800d310a4ea59b98fd73073355464f);
+            
+    
+            var marker_bfe16c3aad71808b26afec19d32954f1 = L.marker(
+                [50.935, -1.39],
+                {
+}
+            ).addTo(map_21d092199082d8e2ca5fad04e498a88a);
+        
+    
+            var icon_de9434bb7ce135fb693a12467aae9edb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ad366b022d4d22ec8683bca3581e8350 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf31782ee239cd2c2379062f225c31f9 = $(`<div id="html_bf31782ee239cd2c2379062f225c31f9" style="width: 100.0%; height: 100.0%;"><b>Stop 22</b><br>1920-08-06 00:00:00<br>Swaythling Lawn, Swaythling, Southampton</div>`)[0];
+                popup_ad366b022d4d22ec8683bca3581e8350.setContent(html_bf31782ee239cd2c2379062f225c31f9);
+            
+        
+
+        marker_bfe16c3aad71808b26afec19d32954f1.bindPopup(popup_ad366b022d4d22ec8683bca3581e8350)
+        ;
+
+        
+    
+    
+                marker_bfe16c3aad71808b26afec19d32954f1.setIcon(icon_de9434bb7ce135fb693a12467aae9edb);
+            
+    
+            var marker_1e5d35a08425ecb5c8a2f5483435d68a = L.marker(
+                [49.456, -2.536],
+                {
+}
+            ).addTo(map_21d092199082d8e2ca5fad04e498a88a);
+        
+    
+            var icon_9ec5a79d0b8accd1f2b66dbc0817d561 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3b7c128eb3dacce7014ec3ef8a882220 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9760b4827e8e728dc9eedec690d2d7bc = $(`<div id="html_9760b4827e8e728dc9eedec690d2d7bc" style="width: 100.0%; height: 100.0%;"><b>Stop 23</b><br>1920-08-13 00:00:00<br>32 St George's Esplanade, St Peters Port, Guernsey</div>`)[0];
+                popup_3b7c128eb3dacce7014ec3ef8a882220.setContent(html_9760b4827e8e728dc9eedec690d2d7bc);
+            
+        
+
+        marker_1e5d35a08425ecb5c8a2f5483435d68a.bindPopup(popup_3b7c128eb3dacce7014ec3ef8a882220)
+        ;
+
+        
+    
+    
+                marker_1e5d35a08425ecb5c8a2f5483435d68a.setIcon(icon_9ec5a79d0b8accd1f2b66dbc0817d561);
+            
+    
+            var marker_5349679ade075f7ac530ef8169bbe579 = L.marker(
+                [49.214, -2.132],
+                {
+}
+            ).addTo(map_21d092199082d8e2ca5fad04e498a88a);
+        
+    
+            var icon_93db248146ba96cdfe5ce8af7dac4114 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_788bf594ba27c7500e52e29eba0f9eb7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8a9f71f75e070ccafc27755358f66928 = $(`<div id="html_8a9f71f75e070ccafc27755358f66928" style="width: 100.0%; height: 100.0%;"><b>Stop 24</b><br>1920-08-30 00:00:00<br>Jersey</div>`)[0];
+                popup_788bf594ba27c7500e52e29eba0f9eb7.setContent(html_8a9f71f75e070ccafc27755358f66928);
+            
+        
+
+        marker_5349679ade075f7ac530ef8169bbe579.bindPopup(popup_788bf594ba27c7500e52e29eba0f9eb7)
+        ;
+
+        
+    
+    
+                marker_5349679ade075f7ac530ef8169bbe579.setIcon(icon_93db248146ba96cdfe5ce8af7dac4114);
+            
+    
+            var marker_7daa9686571981c03541aa9b51ae6ba8 = L.marker(
+                [50.855, 0.574],
+                {
+}
+            ).addTo(map_21d092199082d8e2ca5fad04e498a88a);
+        
+    
+            var icon_2d826c79a6a43df0832bcc639b88f0dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b7bfa344d511160966bf5947440d3a1f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dab227e1c4e2dcece19d52f7cb587d83 = $(`<div id="html_dab227e1c4e2dcece19d52f7cb587d83" style="width: 100.0%; height: 100.0%;"><b>Stop 25</b><br>1920-09-01 00:00:00<br>Devonshire House, 2 Cornwallis Terrace, Hastings</div>`)[0];
+                popup_b7bfa344d511160966bf5947440d3a1f.setContent(html_dab227e1c4e2dcece19d52f7cb587d83);
+            
+        
+
+        marker_7daa9686571981c03541aa9b51ae6ba8.bindPopup(popup_b7bfa344d511160966bf5947440d3a1f)
+        ;
+
+        
+    
+    
+                marker_7daa9686571981c03541aa9b51ae6ba8.setIcon(icon_2d826c79a6a43df0832bcc639b88f0dd);
+            
+    
+            var marker_0dc5b2dc469b547c18de1a3438bfc61d = L.marker(
+                [52.151, 1.365],
+                {
+}
+            ).addTo(map_21d092199082d8e2ca5fad04e498a88a);
+        
+    
+            var icon_1e0837c0370551e0f6bf1a7f273b3633 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a2e9a6e7b791e5f500cee81706e17c74 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a19d1ce5c93df38d49ac888b0b2931a = $(`<div id="html_0a19d1ce5c93df38d49ac888b0b2931a" style="width: 100.0%; height: 100.0%;"><b>Stop 26</b><br>1920-12-01 00:00:00<br>Kettlebury Rectory, Wickham Market, Suffolk</div>`)[0];
+                popup_a2e9a6e7b791e5f500cee81706e17c74.setContent(html_0a19d1ce5c93df38d49ac888b0b2931a);
+            
+        
+
+        marker_0dc5b2dc469b547c18de1a3438bfc61d.bindPopup(popup_a2e9a6e7b791e5f500cee81706e17c74)
+        ;
+
+        
+    
+    
+                marker_0dc5b2dc469b547c18de1a3438bfc61d.setIcon(icon_1e0837c0370551e0f6bf1a7f273b3633);
+            
+    
+            var marker_4a020f720194bd368f7d943714b70adf = L.marker(
+                [51.513, -0.191],
+                {
+}
+            ).addTo(map_21d092199082d8e2ca5fad04e498a88a);
+        
+    
+            var icon_5d7826d8a0b21558893e4331e44ae0d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_19cacf0536c3971578d00a3d0c367443 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b88665549dc6f4d23bedbe70255d0c23 = $(`<div id="html_b88665549dc6f4d23bedbe70255d0c23" style="width: 100.0%; height: 100.0%;"><b>Stop 27</b><br>1921<br>26 Leinster Square, Bayswater, London</div>`)[0];
+                popup_19cacf0536c3971578d00a3d0c367443.setContent(html_b88665549dc6f4d23bedbe70255d0c23);
+            
+        
+
+        marker_4a020f720194bd368f7d943714b70adf.bindPopup(popup_19cacf0536c3971578d00a3d0c367443)
+        ;
+
+        
+    
+    
+                marker_4a020f720194bd368f7d943714b70adf.setIcon(icon_5d7826d8a0b21558893e4331e44ae0d7);
+            
+    
+            ant_path_61eb59457f2e3871b444039b992b044c = L.polyline.antPath(
+              [[54.455, -1.555], [54.695, -1.515], [54.663, -1.448], [55.145, -2.256], [54.523, -1.553], [40.713, -74.006], [45.421, -75.697], [50.716, -3.533], [50.266, -5.052], [52.13, -3.783], [50.503, 4.469], [52.133, 5.291], [49.182, 0.371], [45.421, -75.697], [31.768, 35.214], [30.044, 31.236], [-6.165, 39.202], [45.421, -75.697], [40.713, -74.006], [53.408, -2.992], [51.549, -0.099], [50.935, -1.39], [49.456, -2.536], [49.214, -2.132], [50.855, 0.574], [52.151, 1.365], [51.513, -0.191]],
+              {
+  "stroke": true,
+  "color": "crimson",
+  "weight": 4,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_21d092199082d8e2ca5fad04e498a88a);
+        
+    
+            ant_path_1bf4f17894a2184c177b1677f213d43d = L.polyline.antPath(
+              [[54.455, -1.555], [54.695, -1.515], [54.663, -1.448], [55.145, -2.256], [54.523, -1.553], [40.713, -74.006], [45.421, -75.697], [50.716, -3.533], [50.266, -5.052], [52.13, -3.783], [50.503, 4.469], [52.133, 5.291], [49.182, 0.371], [45.421, -75.697], [31.768, 35.214], [30.044, 31.236], [-6.165, 39.202], [45.421, -75.697], [40.713, -74.006], [53.408, -2.992], [51.549, -0.099], [50.935, -1.39], [49.456, -2.536], [49.214, -2.132], [50.855, 0.574], [52.151, 1.365], [51.513, -0.191]],
+              {
+  "stroke": true,
+  "color": "crimson",
+  "weight": 4,
+  "opacity": 0.8,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": [
+10,
+20,
+],
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 1000,
+  "pulseColor": "white",
+}
+        ).addTo(map_21d092199082d8e2ca5fad04e498a88a);
+        
+    
+            map_21d092199082d8e2ca5fad04e498a88a.fitBounds(
+                [[54.455, -1.555], [54.695, -1.515], [54.663, -1.448], [55.145, -2.256], [54.523, -1.553], [40.713, -74.006], [45.421, -75.697], [50.716, -3.533], [50.266, -5.052], [52.13, -3.783], [50.503, 4.469], [52.133, 5.291], [49.182, 0.371], [45.421, -75.697], [31.768, 35.214], [30.044, 31.236], [-6.165, 39.202], [45.421, -75.697], [40.713, -74.006], [53.408, -2.992], [51.549, -0.099], [50.935, -1.39], [49.456, -2.536], [49.214, -2.132], [50.855, 0.574], [52.151, 1.365], [51.513, -0.191]],
+                {}
+            );
+        
+</script>
+</html>
